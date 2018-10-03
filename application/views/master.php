@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<title>Bootstrap E-commerce Templates</title>
+		<title><?php if (isset($title)) echo $title; ?></title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="">
 		<!--[if ie]><meta content='IE=8' http-equiv='X-UA-Compatible'/><![endif]-->
@@ -52,11 +52,11 @@
 					<a href="<?php echo base_url() ?>" class="logo pull-left"><img src="<?php echo base_url() ?>assets/themes/images/logo.png" class="site_logo" alt=""></a>
 					<nav id="menu" class="pull-right">
 						<ul>
-							<li><a href="./products.html">Woman</a>					
+							<li><a href="">Management</a>					
 								<ul>
-									<li><a href="./products.html">Lacinia nibh</a></li>									
-									<li><a href="./products.html">Eget molestie</a></li>
-									<li><a href="./products.html">Varius purus</a></li>									
+									<li><a href="<?php echo base_url() ?>product-management">Product Management</a></li>									
+									<li><a href="<?php echo base_url() ?>category-management">Category Management</a></li>
+									<li><a href="<?php echo base_url() ?>subcategory-management">Sub Category Management</a></li>							
 								</ul>
 							</li>															
 							<li><a href="./products.html">Man</a></li>			
